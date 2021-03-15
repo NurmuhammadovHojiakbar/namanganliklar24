@@ -1,0 +1,161 @@
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/rubik-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/rubik-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/rubik-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/rubik-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/rubik-v12-latin-regular.svg#Rubik') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/rubik-v12-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/rubik-v12-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/rubik-v12-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/rubik-v12-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/rubik-v12-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/rubik-v12-latin-500.svg#Rubik') format('svg'); /* Legacy iOS */
+  }
+
+  :root{
+      --main-font: "Rubik", "Arial", sans-serif;
+      --bg-color: #F6F6F9;
+      --text-color: #515151;
+      --amount-color: #7a7a7a;
+      --sign-color: #285193;
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+  }
+
+  body{
+      font-family: var(--main-font);
+      font-weight: 500;
+  }
+
+  /*===================================================================================
+                                        HEADER
+  ===================================================================================*/
+
+  .site-header{
+      background-color: var(--bg-color);
+      padding: 40px 80px 23px;
+  }
+  
+  .site-logo{
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 65px;
+  }
+
+  .site-logo-image{
+      background-color: #fff;
+      padding: 4px 6px;
+      border-radius: 8px;
+  }
+
+  ul{
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+  }
+
+  .amount span{
+      margin-right: 5px;
+      font-weight: 500;
+      color: var(--sign-color);
+      font-size: 1rem;
+      line-height: 20px;
+  }
+
+  .amount li{
+      margin-left: 25px;
+      color: var(--amount-color);
+      font-weight: 400;
+  }
+  .subscribe, .subscribe form,.site-logo-left{
+      display: flex;
+      align-items: center;
+  }
+
+  .join-telegram{
+    display: flex;
+    padding: 10px 12px 10px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+ 
+  .join-telegram::before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("../images/cib_telegram@2x.svg");
+      margin-right: 7px;
+  }
+
+  .input{
+      background-color: #fff;
+      border-radius: 8px;
+      border: none;
+      height: 40px;
+      margin-left: 15px;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+
+  .display-off{
+      display: none;
+  }
+  .display-on{
+      display: inline-block;
+      width: 280px;
+  }
+  .search-btn{
+      width: 38px;
+      background-image: url("../images/mdi_magnify.svg");
+  }
+  .language-btn{
+      display: flex;
+      align-items: center;
+      padding: 11px 12px 8px;
+      color: var(--text-color);
+      font-weight: 500;
+  }
+  .language-btn::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/cif_ru.svg");
+    margin-right: 7px;
+    border-radius: 15px;
+  }
+
+  .sitenav-nav{
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 25px 21px;
+      margin-bottom: 18px;
+  }
+
+  .sitenav-link{
+      font-size: 19px;
+      font-weight: 500;
+      color: var(--text-color);
+      text-decoration: none;
+  }
