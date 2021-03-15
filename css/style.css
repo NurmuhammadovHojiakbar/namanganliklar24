@@ -121,6 +121,7 @@
   }
 
   .sitenav-nav{
+      max-width: 1200px;
       justify-content: space-between;
       background-color: #fff;
       padding: 25px 21px;
