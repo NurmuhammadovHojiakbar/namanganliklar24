@@ -24,6 +24,7 @@
       background-color: var(--bg-color);
       padding: 40px 80px 23px;
       text-align: center;
+      border-top: 4px solid #285193;
   }
   
   .site-logo{
