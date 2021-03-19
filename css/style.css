@@ -144,3 +144,82 @@
   .sitenav-link:hover{
       color: #295091;
   }
+
+  /*=================================================================================
+                                            SITE MAIN 
+   =================================================================================*/
+   /* .site-main{
+       padding: 20px 120px 30px;
+   } */
+    .corona-info{
+        background-color: var(--bg-color);
+        border-radius: 5px;
+        padding: 44px 0;
+        width: 1200px;
+        margin: 20px auto;
+    }
+    .corona-item{
+        display: flex;
+        align-items: center;
+        padding: 0 20px 0 0;
+        margin-left: 20px; 
+        border-right: 2px solid #f4ccd1;
+    }
+    .corona-item:first-child{
+        font-size: 20px;
+        border-right: 2px solid #eb5569;
+    }
+    .corona-item:last-child{
+        border:none;
+    }
+    .corona-item:first-child::before{
+        content: "";
+        background-image: url("../images/corona.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 60px;
+        height: 45px;
+        margin-right: 25px;
+    }
+    .corona-item:nth-child(2)::before{
+        content: "";
+        background-image: url("../images/emojione-monotone_face-with-medical-mask.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+    }
+    .corona-item:nth-child(3)::before{
+        content: "";
+        background-image: url("../images/cil_smile.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+    }
+    .corona-item:nth-child(4)::before{
+        content: "";
+        background-image: url("../images/Vector.png");
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+    }
+    .corona-item:not(:first-child) p{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .corona-item:nth-child(2){
+        color: #db0000;
+    }
+    .corona-item:nth-child(3){
+        color: #05B135;
+    }
+    .corona-item span{
+        font-size: 25px;
+        font-weight: normal;
+        color: black;
+    }
+    
