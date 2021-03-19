@@ -151,12 +151,14 @@
    /* .site-main{
        padding: 20px 120px 30px;
    } */
+   .news, .corona-info{
+        width: 1200px;
+        margin: 20px auto;
+   }
     .corona-info{
         background-color: var(--bg-color);
         border-radius: 5px;
         padding: 44px 0;
-        width: 1200px;
-        margin: 20px auto;
     }
     .corona-item{
         display: flex;
@@ -221,5 +223,28 @@
         font-size: 25px;
         font-weight: normal;
         color: black;
+    }
+
+    /* NEWS  */
+    .news{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .news figure{
+        margin-left: 15px;
+    }
+    .news-title{
+        width: 385px;
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        color: #202020;
+        margin-bottom: 10px;
+    }
+    .news-time{
+        font-size: 14px;
+        line-height: 17px;
+        color: #6B6D97;
     }
     
